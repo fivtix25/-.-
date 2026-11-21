@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Альбер Камю — Философия Абсурда</title>
+    <!-- Подключение файла стилей из папки style -->
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body class="page">
+
+    <!-- Шапка сайта (Header) -->
+    <header class="header">
+        <div class="header__container">
+            <a href="index.html" class="header__logo">Камю.Абсурд</a>
+            <nav class="header__nav">
+                <a href="index.html" class="header__link header__link--active">Главная</a>
+                <a href="bio.html" class="header__link">Биография</a>
+                <a href="works.html" class="header__link">Произведения</a>
+                <a href="philosophy.html" class="header__link">Философия</a>
+            </nav>
+            <div class="header__actions">
+                <button class="header__btn header__btn--outline">Войти</button>
+                <button class="header__btn header__btn--primary">Читать</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <!-- Главный баннер (Hero секция по макету) -->
+        <section class="hero">
+            <div class="hero__container">
+                <div class="hero__image-wrapper">
+                    <!-- Локальный путь к фото Камю -->
+                    <img src="https://i.pinimg.com/1200x/e0/8d/dc/e08ddcca5aef0e9c361c783f4047f995.jpg" alt="Альбер Камю" class="hero__img">
+                </div>
+                <div class="hero__content">
+                    <span class="hero__tag">XD - автор </span>
+                    <h1 class="hero__title">Вы столкнулись с Абсурдом?</h1>
+                    <p class="hero__descr">Человек просыпается, идет на работу, ужинает и спит. Понедельник, вторник, среда. Но однажды возникает вопрос «Зачем?». Прощу,погрузитесь в философию бунта и свободы Альбера Камю.</p>
+                    <div class="hero__actions">
+                        <button class="hero__btn hero__btn--primary">Читать эссе</button>
+                        <a href="philosophy.html" class="hero__btn hero__btn--outline">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Сетка карточек (Latest Works) -->
+        <section class="works">
+            <div class="works__container">
+                <h2 class="works__title">Последние произведения</h2>
+                
+                <!-- Табы фильтрации как в Figma -->
+                <div class="works__filters">
+                    <button class="works__filter-btn works__filter-btn--active">Все</button>
+                    <button class="works__filter-btn">Романы</button>
+                    <button class="works__filter-btn">Эссе</button>
+                    <button class="works__filter-btn">Пьесы</button>
+                </div>
+
+                <!-- Сетка карточек 2х2 -->
+                <div class="works__grid">
+                    <!-- Карточка 1 -->
+                    <article class="card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYo0fkHC1hVVt53nPeNEry6-7Mi3BEx4qygIqgsxnWxg&s=10" alt="Посторонний" class="card__img">
+                        <div class="card__content">
+                            <span class="card__tag">Роман</span>
+                            <h3 class="card__name">Посторонний (1942)</h3>
+                            <p class="card__text">История Мерсо, который отказывается лгать обществу и играть по его навязанным правилам.</p>
+                        </div>
+                    </article>
+
+                    <!-- Карточка 2 -->
+                    <article class="card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbH6AoSNf9M_3phf21_3citoULNb1bj-8gUQvLTSRsaQ&s=10" alt="Миф о Сизифе" class="card__img">
+                        <div class="card__content">
+                            <span class="card__tag">Эссе</span>
+                            <h3 class="card__name">Миф о Сизифе (1942)</h3>
+                            <p class="card__text">Манифест философии абсурда. Стоит ли жизнь того, чтобы её жить? И почему Сизиф счастлив?</p>
+                        </div>
+                    </article>
+
+                    <!-- Карточка 3 -->
+                    <article class="card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtWPcpM8CgHb5rSHK9OC7N7kWJmJ6phVboyb1ZFD-NgQ&s=10" alt="Чума" class="card__img">
+                        <div class="card__content">
+                            <span class="card__tag">Роман</span>
+                            <h3 class="card__name">Чума (1947)</h3>
+                            <p class="card__text">Роман-притча о борьбе маленького города с внезапной эпидемией и метафора Сопротивления.</p>
+                        </div>
+                    </article>
+
+                    <!-- Карточка 4 -->
+                    <article class="card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRot6WsOpAhbPtL47cNpg53B6uYLopNc7pL0jVNiw4OgQ&s=10" alt="Бунтующий человек" class="card__img">
+                        <div class="card__content">
+                            <span class="card__tag">Эссе</span>
+                            <h3 class="card__name">Бунтующий человек (1951)</h3>
+                            <p class="card__text">Глубокий анализ метафизического и исторического протеста человека против несправедливости мира.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Темная промо-секция -->
+        <section class="app-banner">
+            <div class="app-banner__container">
+                <span class="app-banner__tag">Философия действия</span>
+                <h2 class="app-banner__title">Свобода начинается с осознания абсурда</h2>
+                <p class="app-banner__descr">«Единственный способ справиться с несвободным миром — стать абсолютно свободным, чтобы само твое существование было актом бунта».</p>
+                <div class="app-banner__actions">
+                    <a href="philosophy.html" class="app-banner__btn app-banner__btn--dark">Изучить концепцию</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Многоколоночный подвал (Footer) -->
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__brand">
+                <a href="index.html" class="footer__logo">Камю.Абсурд</a>
+                <p class="footer__text">Учебный проект по дисциплине «Основы HTML/CSS».</p>
+                <div class="footer__socials">
+                    <span class="footer__icon">𝕏</span>
+                    <span class="footer__icon">💬</span>
+                    <span class="footer__icon">📺</span>
+                </div>
+            </div>
+
+            <div class="footer__menu">
+                <h4 class="footer__menu-title">Страницы</h4>
+                <ul class="footer__list">
+                    <li><a href="index.html" class="footer__link">Главная</a></li>
+                    <li><a href="bio.html" class="footer__link">Биография</a></li>
+                    <li><a href="works.html" class="footer__link">Произведения</a></li>
+                    <li><a href="philosophy.html" class="footer__link">Философия</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__menu">
+                <h4 class="footer__menu-title"> Читая это, вы полность соглашаетесь с тем что история абсурдизна очень точно описывает жизнь студентов печально известного IT HUB MAGAS </h4>
+                <ul class="footer__list">
+                    <li><span class="footer__info-item">Студент: XD </span></li>
+                    <li><span class="footer__info-item">Методология: what? </span></li>
+                    <li><span class="footer__info-item">Стиль: Подкаст </span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="footer__bottom-container">
+                <p class="footer__copyright">© 2026 Все права защищены. Разработано для учебных целей.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,371 @@
+/* Общие сбросы отступов */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #FDF8F5; /* Фирменный кремовый фон PodOfCast */
+    color: #333333;
+}
+
+/* Ограничивающие контейнеры */
+.header__container, 
+.hero__container, 
+.works__container, 
+.footer__container,
+.bio__container,
+.philosophy__container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Шапка сайта */
+.header {
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #EADECE;
+    padding: 20px 0;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo, .footer__logo {
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+    color: #333333;
+}
+
+.header__nav {
+    display: flex;
+    gap: 30px;
+}
+
+.header__link {
+    text-decoration: none;
+    color: #666666;
+    font-weight: 500;
+}
+
+.header__link--active {
+    color: #E63946;
+    font-weight: bold;
+}
+
+.header__actions {
+    display: flex;
+    gap: 15px;
+}
+
+/* Общие стили кнопок */
+.header__btn--primary, 
+.hero__btn--primary {
+    background-color: #E63946;
+    color: #FFFFFF;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.header__btn--outline, 
+.hero__btn--outline {
+    background-color: transparent;
+    color: #333333;
+    border: 2px solid #333333;
+    padding: 12px 24px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* Герой-секция (Главный баннер) */
+.hero {
+    padding: 60px 0;
+}
+
+.hero__container {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.hero__image-wrapper {
+    flex: 1;
+    background-color: #EADECE;
+    height: 380px;
+    border-radius: 24px;
+    overflow: hidden;
+}
+
+.hero__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero__content {
+    flex: 1;
+}
+
+.hero__tag, .card__tag, .bio__tag, .philosophy__tag, .works__tag {
+    display: inline-block;
+    background-color: rgba(230, 57, 70, 0.1);
+    color: #E63946; /* Красный акцент */
+    padding: 6px 16px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero__title {
+    font-size: 42px;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero__descr {
+    font-size: 16px;
+    color: #666666;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.hero__actions {
+    display: flex;
+    gap: 15px;
+}
+
+/* Секция произведений и Сетка Grid */
+.works {
+    padding: 60px 0;
+}
+
+.works__title {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.works__filters {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.works__filter-btn {
+    background: transparent;
+    border: 1px solid #EADECE;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.works__filter-btn--active {
+    background-color: #E63946;
+    color: #FFFFFF;
+    border-color: #E63946;
+}
+
+.works__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Ровно 2 колонки как на макете */
+    gap: 30px;
+}
+
+/* Карточки книг */
+.card {
+    background-color: #FFFFFF;
+    border: 1px solid #EADECE;
+    border-radius: 24px;
+    padding: 24px;
+    display: flex;
+    gap: 20px;
+}
+
+.card__img {
+    width: 120px;
+    height: 160px;
+    background-color: #EADECE; /* Заглушка, если нет файла картинки */
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.card__content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card__tag {
+    align-self: flex-start;
+    margin-bottom: 10px;
+    padding: 4px 10px;
+    font-size: 12px;
+}
+
+.card__name {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.card__text {
+    color: #666666;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Темный промо-баннер */
+.app-banner {
+    padding: 60px 0;
+}
+
+.app-banner__container {
+    background-color: #1A1A1A;
+    color: #FFFFFF;
+    border-radius: 32px;
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.app-banner__tag {
+    display: inline-block;
+    color: #E63946;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 16px;
+}
+
+.app-banner__title {
+    font-size: 36px;
+    font-weight: 800;
+    margin-bottom: 16px;
+}
+
+.app-banner__descr {
+    color: #A0A0A0;
+    font-size: 16px;
+    max-width: 550px;
+    margin: 0 auto 32px auto;
+    line-height: 1.6;
+    font-style: italic;
+}
+
+.app-banner__btn--dark {
+    display: inline-block;
+    background-color: #FFFFFF;
+    color: #1A1A1A;
+    text-decoration: none;
+    padding: 14px 32px;
+    border-radius: 12px;
+    font-weight: bold;
+}
+
+/* Страница Биографии */
+.bio { padding: 60px 0; }
+.bio__container { max-width: 800px; }
+.bio__title { font-size: 42px; font-weight: 800; margin-bottom: 12px; }
+.bio__subtitle { font-size: 18px; color: #666666; margin-bottom: 40px; border-bottom: 1px solid #EADECE; padding-bottom: 24px; }
+.bio__content { display: flex; flex-direction: column; gap: 35px; }
+.bio-chapter__title { font-size: 24px; font-weight: 700; margin-bottom: 12px; }
+.bio-chapter__text { font-size: 16px; color: #444444; line-height: 1.7; }
+
+/* Блок Философии: Абсурд и Вера */
+.faith-block {
+    background-color: #FFFFFF; /* Чистый белый фон карточки, как у остальных блоков */
+    border-left: 4px solid #333333; /* Строгая темная линия под цвет твоего текста */
+    padding: 30px;
+    margin: 40px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03); /* Легкая мягкая тень */
+}
+
+.faith-block__title {
+    margin-top: 0;
+    color: #333333;
+    font-size: 1.4em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.faith-block__intro {
+    line-height: 1.7;
+    color: #555555;
+    margin-bottom: 25px;
+}
+
+.faith-block__list {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.faith-block__item {
+    margin-bottom: 24px;
+    line-height: 1.7;
+    color: #333333;
+}
+
+.faith-block__item:last-child {
+    margin-bottom: 0; /* Убираем отступ у последнего элемента */
+}
+
+.faith-block__item-title {
+    display: block;
+    font-size: 1.1em;
+    color: #333333;
+    margin-bottom: 6px;
+    position: relative;
+    padding-left: 15px;
+}
+
+/* Красивый кастомный маркер перед каждым пунктом */
+.faith-block__item-title::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #333333;
+}
+
+/* Подвал (Footer) */
+.footer {
+    background-color: #FFFFFF;
+    border-top: 1px solid #EADECE;
+    padding: 60px 0 20px 0;
+    margin-top: 40px;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #F0E6DF;
+}
+
+.footer__brand { flex: 2; display: flex; flex-direction: column; gap: 16px; }
+.footer__text { color: #666666; font-size: 14px; }
+.footer__socials { display: flex; gap: 16px; }
+.footer__icon { font-size: 18px; cursor: pointer; color: #333333; }
+.footer__menu { flex: 1; }
+.footer__menu-title { font-size: 16px; font-weight: bold; margin-bottom: 20px; }
+.footer__list { list-style: none; display: flex; flex-direction: column; gap: 12px; }
+.footer__link { text-decoration: none; color: #666666; font-size: 14px; }
+.footer__info-item { color: #888888; font-size: 14px; }
+.footer__bottom { padding-top: 20px; }
+.footer__bottom-container { max-width: 1140px; margin: 0 auto; }
+.footer__copyright { color: #999999; font-size: 12px; }
